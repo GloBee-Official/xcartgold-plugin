@@ -4,6 +4,10 @@ This is a Community-supported project.
 
 If you are interested in becoming a maintainer of this project, please contact us at integrations@globee.com. Developers at BitPay will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
 
+# GloBee plugin for Xcart Gold
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/GloBee-Official/xcartgold-plugin/master/LICENSE.txt)
+
 # Description
 
 Bitcoin payment plugin for X-Cart Gold using the globee.com service.
@@ -34,8 +38,3 @@ To get up and running with our plugin quickly, see the GUIDE here: https://githu
 # Contribute
 
 To contribute to this project, please fork and submit a pull request.
-
-## License
-
-Please refer to the [LICENSE](https://github.com/GloBee-Official//xcartgold-plugin/blob/master/LICENSE) file that came with this project.
-
