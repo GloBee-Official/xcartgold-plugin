@@ -1,10 +1,10 @@
-# Using the BitPay plugin for X-Cart Gold
+# Using the GloBee plugin for X-Cart Gold
 
 ## Prerequisites
 
 * Last Version Tested: X-Cart Gold 4.6.4
 
-You must have a BitPay merchant account to use this plugin.  It's free to [sign-up for a BitPay merchant account](https://bitpay.com/start).
+You must have a GloBee merchant account to use this plugin.  It's free to [sign-up for a GloBee merchant account](https://globee.com/).
 
 
 ## Installation
@@ -14,23 +14,23 @@ You must have a BitPay merchant account to use this plugin.  It's free to [sign-
 
 ## Configuration
 
-1. Create an API key at bitpay.com by clicking My Account > API Access Keys > Add New API Key.
+1. Create an API key at globee.com by clicking My Account > API Access Keys > Add New API Key.
 2. In your XCart admin panel, go to Settings > Payment Methods > Payment Gateways.
-3. Change Your Country to All Countries, select Bitpay and click Add.
-4. Click Payment Methods tab, check the box next to Bitpay and click Apply Changes.
-5. In the same Bitpay section click Configure. 
+3. Change Your Country to All Countries, select GloBee and click Add.
+4. Click Payment Methods tab, check the box next to GloBee and click Apply Changes.
+5. In the same GloBee section click Configure. 
 6. Enter your API key from step 1.
-7. Select a transaction speed. The high speed will send a confirmation as soon as a transaction is received in the bitcoin network (usually a few seconds). A medium speed setting will typically take 10 minutes. The low speed setting usually takes around 1 hour. See the bitpay.com merchant documentation for a full description of the transaction speed settings: https://bitpay.com/downloads/bitpayApi.pdf
+7. Select a transaction speed. The high speed will send a confirmation as soon as a transaction is received in the bitcoin network (usually a few seconds). A medium speed setting will typically take 10 minutes. The low speed setting usually takes around 1 hour.
 8. Choose the currency that corresponds to your store's currency from the drop-down list.
 9. Click Update.
 
 **Using testnet:**
 
-If you want to use the bitpay plugin with a testnet account, you will need to modify the file `/modules/Bitpay/bp_lib.php`, changing all instances of `https://bitpay.com` to `https://test.bitpay.com`. When configuring the plugin in step 1, get the API key from your `test.bitpay.com`.
+If you want to use the GloBee plugin with a testnet account, you will need to modify the file `/modules/Bitpay/bp_lib.php`, changing all instances of `https://globee.com` to `https://test.globee.com`. When configuring the plugin in step 1, get the API key from your `test.globee.com`.
 
 ## Usage
 
-When a shopper chooses the Bitcoin payment method, they will be redirected to Bitpay.com where they will pay an invoice.  Bitpay will then notify your Xcart system that the order was paid for.  The customer will be presented with a button to return to your store.  
+When a shopper chooses the Bitcoin payment method, they will be redirected to globee.com where they will pay an invoice.  GloBee will then notify your Xcart system that the order was paid for.  The customer will be presented with a button to return to your store.  
 
 The order status in the admin panel will be "Processed" if payment has been confirmed. 
 
